@@ -125,6 +125,48 @@
         <h3 id="declared-pandemic">Unknown</h3>
       </h3>
     </div>
+
+    <div class="newsletter">
+      <h1>Sign up to recieve real-time information about COVID-19!</h1>
+
+      <div>
+        <input
+          type="text"
+          id="txtFirstName"
+          placeholder="Enter your first name"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          id="txtLastName"
+          placeholder="Enter your last name"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          id="txtPhoneNumber"
+          placeholder="Enter your phone number"
+        />
+      </div>
+      <div>
+        <input
+          type="email"
+          id="txtEmailAddress"
+          placeholder="Enter your email address"
+        />
+      </div>
+      <div>
+        <select id="agree">
+          <option value="yes">I agree to terms and conditions.</option>
+          <option value="no">I do not agree to terms and conditions.</option>
+        </select>
+      </div>
+      <div>
+        <input type="button" id="bt" value="Submit" onclick="saveFile()" />
+      </div>
+    </div>
     <!-- This is the main JavaScript file which executes logic for your site -->
     <script src="src/main.js"></script>
   </body>

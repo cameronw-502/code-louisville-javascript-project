@@ -50,3 +50,44 @@ document.getElementById("california-cruise").innerHTML = dateCalculator(
 document.getElementById("declared-pandemic").innerHTML = dateCalculator(
   "3/11/2020"
 );
+
+//Newsletter Signup Form
+
+let saveFile = () => {
+  const firstName = document.getElementById("txtFirstName");
+  const lastName = document.getElementById("txtLastName");
+  const phoneNumber = document.getElementById("txtPhoneNumber");
+  const email = document.getElementById("txtEmailAddress");
+  const terms = document.getElementById("agree");
+
+  let data =
+    "\r First Name: " +
+    firstName.value +
+    " \r\n " +
+    "Last Name: " +
+    lastName.value +
+    " \r\n " +
+    "Phone Number: " +
+    phoneNumber.value +
+    " \r\n " +
+    "Email: " +
+    email.value +
+    " \r\n " +
+    "Agree: " +
+    terms.value;
+
+  const textToBLOB = new Blob([data], { type: "text/plain" });
+  const sFileName = "newsletterSignups.txt";
+
+  let newLink = document.createElement("a");
+  newLink.download = sFileName;
+
+  if (window.webkitURL != null) {
+    newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+  } else {
+    newLink.href = window.URL.createObjectURL(textToBLOB);
+    newLink.style.display = "none";
+    document.body.appendChild(newLink);
+  }
+  newLink.click();
+};
