@@ -192,3 +192,32 @@ img {
     margin-right:0%;
   }
 }
+@media screen and (max-width: 1118px) {
+  .header-title {
+    font-size: 50px;
+  }
+  
+  .header-description {
+    font-size:25px;
+  }
+}
+@media screen and (max-width: 631px) {
+  .header-title {
+      align-content: center;
+      margin-top: 25px;
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+  
+  .header-description {
+    width: 95%;
+  }
+  .header {
+    background-image: url(../../../img/covid2.jpg);
+    background-size: 200% 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 32em;
+  }
+}
