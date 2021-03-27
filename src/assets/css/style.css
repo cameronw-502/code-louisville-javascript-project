@@ -158,6 +158,28 @@ img {
   margin-top: 35px;
 }
 
+/* Counter */
+
+.days-title{
+  font-size: 350%;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+.days-content{
+  font-size: 200%;
+  padding: 4% 2% 0% 4%;
+}
+
+.days-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width:75%;
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 1000px) {

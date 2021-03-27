@@ -73,7 +73,17 @@ document.getElementById("california-cruise").innerHTML = dateCalculator(
 document.getElementById("declared-pandemic").innerHTML = dateCalculator(
   "3/11/2020"
 );
-
+document.getElementById("deathsPast").innerHTML = dateCalculator("5/28/2020");
+document.getElementById("airborne").innerHTML = dateCalculator("7/9/2020");
+document.getElementById("moderna").innerHTML = dateCalculator("7/27/2020");
+document.getElementById("pfizer").innerHTML = dateCalculator("9/14/2020");
+document.getElementById("one-day").innerHTML = dateCalculator("11/4/2020");
+document.getElementById("pfizer-release").innerHTML = dateCalculator(
+  "12/11/2020"
+);
+document.getElementById("moderna-release").innerHTML = dateCalculator(
+  "12/18/2020"
+);
 //Newsletter Signup Form
 
 let saveFile = () => {
