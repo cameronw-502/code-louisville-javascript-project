@@ -11,13 +11,24 @@ function success() {
   document.getElementById("inIcuCurrently").innerHTML = numberWithCommas(
     data[0].inIcuCurrently
   );
-  document.getElementById("hospitalized").innerHTML = data[0].hospitalized;
-  document.getElementById("negative").innerHTML = data[0].negative;
-  document.getElementById("onVentilatorCurrently").innerHTML =
-    data[0].onVentilatorCurrently;
-  document.getElementById("totalTestResults").innerHTML =
-    data[0].totalTestResults;
-  document.getElementById("inIcuCurrently").innerHTML = data[0].inIcuCurrently;
+  document.getElementById("hospitalized").innerHTML = numberWithCommas(
+    data[0].hospitalized
+  );
+  document.getElementById("negative").innerHTML = numberWithCommas(
+    data[0].negative
+  );
+  document.getElementById("onVentilatorCurrently").innerHTML = numberWithCommas(
+    data[0].onVentilatorCurrently
+  );
+  document.getElementById("totalTestResults").innerHTML = numberWithCommas(
+    data[0].totalTestResults
+  );
+  document.getElementById("pending1").innerHTML = numberWithCommas(
+    data[0].pending
+  );
+  document.getElementById("icuCummulative").innerHTML = numberWithCommas(
+    data[0].inIcuCumulative
+  );
 }
 
 function error(err) {
