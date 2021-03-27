@@ -15,17 +15,11 @@
     <!-- These are imports for stylesheets to change the appearance of the site -->
     <link rel="stylesheet" href="src/assets/css/normalize.css" />
     <link rel="stylesheet" href="src/assets/css/style.css" />
-    <!-- <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -39,34 +33,42 @@
       </h2>
     </div>
 
-    <div class="about">
+    <div class="about top-container">
       <h2 class="title">What is COVID-19?</h2>
       <p>
         Coronavirus disease (COVID-19) is an infectious disease caused by a
-        newly discovered coronavirus. <br />Most people infected with the
-        COVID-19 virus will experience mild to moderate respiratory illness and
-        recover without requiring special treatment. Older people, and those
-        with underlying medical problems like cardiovascular disease, diabetes,
-        chronic respiratory disease, and cancer are more likely to develop
-        serious illness. <br />The best way to prevent and slow down
-        transmission is to be well informed about the COVID-19 virus, the
-        disease it causes and how it spreads. Protect yourself and others from
-        infection by washing your hands or using an alcohol based rub frequently
-        and not touching your face. <br />The COVID-19 virus spreads primarily
-        through droplets of saliva or discharge from the nose when an infected
-        person coughs or sneezes, so it’s important that you also practice
-        respiratory etiquette (for example, by coughing into a flexed elbow).
+        newly discovered coronavirus.
+      </p>
+      <p>
+        Most people infected with the COVID-19 virus will experience mild to
+        moderate respiratory illness and recover without requiring special
+        treatment. Older people, and those with underlying medical problems like
+        cardiovascular disease, diabetes, chronic respiratory disease, and
+        cancer are more likely to develop serious illness.
+      </p>
+      <p>
+        The best way to prevent and slow down transmission is to be well
+        informed about the COVID-19 virus, the disease it causes and how it
+        spreads. Protect yourself and others from infection by washing your
+        hands or using an alcohol based rub frequently and not touching your
+        face.
+      </p>
+      <p>
+        The COVID-19 virus spreads primarily through droplets of saliva or
+        discharge from the nose when an infected person coughs or sneezes, so
+        it’s important that you also practice respiratory etiquette (for
+        example, by coughing into a flexed elbow).
       </p>
     </div>
 
-    <div class="covid-api">
+    <div class="covid-api container">
       <h2 class="title">COVID-19 Statistics</h2>
       <p>
         Below is current, up-to-date, statistics regarding COVID-19 from around
         the World.
       </p>
 
-      <table>
+      <!-- <table>
         <tr>
           <td>Deaths</td>
           <td id="covid-deaths">Information Unavailable</td>
@@ -95,10 +97,61 @@
           <td>In ICU Currently</td>
           <td id="inIcuCurrently">Information Unavailable</td>
         </tr>
-      </table>
+      </table> -->
+
+      <div class="flex-container">
+        <div>
+          <table>
+            <tr>
+              <td class="left">
+                <p class="count-title">Covid Cases</p>
+                <p class="count" id="positive">cases</p>
+              </td>
+              <td>
+                <img class="icon" src="img/icons/covid.png" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td class="left">
+                <p class="count-title">Total Deaths</p>
+                <p class="count" id="covid-deaths">Deaths</p>
+              </td>
+              <td>
+                <img class="icon" src="img/icons/covid.png" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td class="left">
+                <p class="count-title">In ICU</p>
+                <p class="count" id="inIcuCurrently"></p>
+              </td>
+              <td>
+                <img class="icon" src="img/icons/covid.png" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
     </div>
 
-    <div class="counter">
+    <div class="counter container">
       <h3>
         Days since WHO announced mysterious Coronavirus related pneumonia in
         Wuhan, China:

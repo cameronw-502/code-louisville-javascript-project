@@ -2,9 +2,16 @@ function success() {
   var data = JSON.parse(this.responseText);
   console.log(data);
 
-  document.getElementById("covid-deaths").innerHTML = data[0].death;
+  document.getElementById("positive").innerHTML = numberWithCommas(
+    data[0].positive
+  );
+  document.getElementById("covid-deaths").innerHTML = numberWithCommas(
+    data[0].death
+  );
+  document.getElementById("inIcuCurrently").innerHTML = numberWithCommas(
+    data[0].inIcuCurrently
+  );
   document.getElementById("hospitalized").innerHTML = data[0].hospitalized;
-  document.getElementById("positive").innerHTML = data[0].positive;
   document.getElementById("negative").innerHTML = data[0].negative;
   document.getElementById("onVentilatorCurrently").innerHTML =
     data[0].onVentilatorCurrently;
@@ -23,6 +30,11 @@ xhr.onerror = error;
 xhr.open("GET", "https://api.covidtracking.com/v1/us/current.json");
 xhr.send();
 
+function numberWithCommas(x) {
+  var parts = x.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return parts.join(".");
+}
 //Date Calculator
 
 function dateCalculator(date) {
