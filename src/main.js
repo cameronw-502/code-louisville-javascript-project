@@ -146,12 +146,14 @@ form.addEventListener("submit", (e) => {
 function login() {
   let password = prompt("Enter Password");
   if (password === "codelouisville") {
-    window.location.href = "newsletter.html";
+    window.location.href =
+      "https://cameronw-502.github.io/code-louisville-javascript-project/newsletter.html";
   } else {
     alert("wrong");
   }
 }
 
 function home() {
-  window.location.href = "index.html";
+  window.location.href =
+    "https://cameronw-502.github.io/code-louisville-javascript-project/";
 }
