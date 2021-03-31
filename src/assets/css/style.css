@@ -229,6 +229,28 @@ button {
   color: white;
 }
 
+.login {
+  margin-top: 25px;
+  background: grey;
+  color: black;
+  width: 55px;
+  align-items: center;
+  border-radius: 20px;
+  border-style: solid;
+  height: 40px;
+  text-align: center;
+}
+.return {
+  margin-top: 25px;
+  background: grey;
+  color: black;
+  width: 100px;
+  align-items: center;
+  border-radius: 20px;
+  border-style: solid;
+  height: 40px;
+  text-align: center;
+}
 /* Media Queries */
 
 @media screen and (max-width: 1000px) {

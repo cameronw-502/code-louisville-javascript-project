@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <!-- This is the title which appears in the tab at the top of the browser -->
+    <title>Covid To The World</title>
+    <!-- This is the description of your page which will be used for search indexing -->
+    <meta
+      name="description"
+      content="Boilerplate for CodeLouisville Javascript Track"
+    />
+    <!-- This is the viewport your website supports, and how it responds to zoomings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- These are imports for stylesheets to change the appearance of the site -->
+    <link rel="stylesheet" href="src/assets/css/normalize.css" />
+    <link rel="stylesheet" href="src/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Phone Number</td>
+          <td>Email Address</td>
+          <td>Agree</td>
+        </tr>
+      </thead>
+      <tbody
+        data-sheetdb-url="https://sheetdb.io/api/v1/258kzr6osm16s"
+        data-sheetdb-sort-by="firstname"
+        data-sheetdb-sort-order="desc"
+      >
+        <tr>
+          <td>{{firstname}}</td>
+          <td>{{lastname}}</td>
+          <td>{{phonenumber}}</td>
+          <td>{{email}}</td>
+          <td>{{agree}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="return" onclick="home()">Return Home</button>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>

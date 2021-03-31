@@ -142,3 +142,16 @@ form.addEventListener("submit", (e) => {
       // you can put any JS code here
     });
 });
+
+function login() {
+  let password = prompt("Enter Password");
+  if (password === "codelouisville") {
+    window.location.href = "newsletter.html";
+  } else {
+    alert("wrong");
+  }
+}
+
+function home() {
+  window.location.href = "index.html";
+}
