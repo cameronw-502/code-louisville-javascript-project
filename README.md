@@ -6,6 +6,7 @@ This website was created to show current statistics of COVID-19. It uses an api 
 
 - Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
   - This website pulling data from https://api.covidtracking.com/v1/us/current.json which displays the up to date covid information in "Covid-19 Statistics" section.
+  - It is also pulling data from https://sheetdb.io/api/v1/258kzr6osm16s and displaying it on newsletter.html.
 - Post to an external API and show that it has saved/persisted
   - Pushing data from newsletter form to a google sheet and api.
     - API : https://sheetdb.io/api/v1/258kzr6osm16s
@@ -16,3 +17,5 @@ This website was created to show current statistics of COVID-19. It uses an api 
   - In the important events section, the website will get the current data and calculate the number of days since the event happened.
 
 ## Extra Features
+
+When scroll down to the bottom of the homepage. There is a button in the left hand corner that says login. When you push the button, it will ask you to enter the password "codelouisville". It will then navigate to a page with the newletter api listed.

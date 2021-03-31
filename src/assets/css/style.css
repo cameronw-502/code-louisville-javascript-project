@@ -204,7 +204,7 @@ select {
   text-align: center;
 }
 
-button {
+.newsletter-button {
   background: green;
   color: white;
   width: 75%;
