@@ -4,7 +4,5 @@ This website was created to show current statistics of COVID-19. It uses an api 
 
 ## Project Features
 
-Markup : _ Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
-_ This website pulling data from https://api.covidtracking.com/v1/us/current.json which displays the up to date covid information in "Covid-19 Statistics" section.
-
-          * Bullet list item 2
+- Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
+- - This website pulling data from https://api.covidtracking.com/v1/us/current.json which displays the up to date covid information in "Covid-19 Statistics" section.
