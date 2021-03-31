@@ -4,4 +4,5 @@ This website was created to show current statistics of COVID-19. It uses an api 
 
 ## Project Features
 
-hbhbhbb
+Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
+\*jfjfj
