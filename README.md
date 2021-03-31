@@ -5,4 +5,12 @@ This website was created to show current statistics of COVID-19. It uses an api 
 ## Project Features
 
 - Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
-- - This website pulling data from https://api.covidtracking.com/v1/us/current.json which displays the up to date covid information in "Covid-19 Statistics" section.
+  - This website pulling data from https://api.covidtracking.com/v1/us/current.json which displays the up to date covid information in "Covid-19 Statistics" section.
+- Post to an external API and show that it has saved/persisted
+  - Pushing data from newsletter form to a google sheet and api.
+    - API : https://sheetdb.io/api/v1/258kzr6osm16s
+    - Google Sheets: https://docs.google.com/spreadsheets/d/12O5PKaCzv4fTlnGjDQgSW3o2_WwHxEmLtpNzQ8ELPQI/edit#gid=0
+- Create a form and save the values (on click of Submit button) to an external file.
+  - When you fill out the newsletter form, it will save your response to a .txt file and save it on your system.
+- Calculate and display data based on an external factor.
+  - In the important events section, the website will get the current data and calculate the number of days since the event happened.
