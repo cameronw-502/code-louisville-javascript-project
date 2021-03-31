@@ -14,3 +14,5 @@ This website was created to show current statistics of COVID-19. It uses an api 
   - When you fill out the newsletter form, it will save your response to a .txt file and save it on your system.
 - Calculate and display data based on an external factor.
   - In the important events section, the website will get the current data and calculate the number of days since the event happened.
+
+## Extra Features
