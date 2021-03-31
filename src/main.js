@@ -117,10 +117,28 @@ let saveFile = () => {
 
   if (window.webkitURL != null) {
     newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+    document.getElementById("newsletter-success").innerHTML =
+      firstName.value +
+      ", you have successfully signed up for real-time information alerts!";
   } else {
     newLink.href = window.URL.createObjectURL(textToBLOB);
     newLink.style.display = "none";
     document.body.appendChild(newLink);
+    document.getElementById("newsletter-decline").innerHTML =
+      "Sorry, something has gone wrong! Try refreshing the page and try again.";
   }
   newLink.click();
 };
+
+var form = document.getElementById("sheetdb-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(document.getElementById("sheetdb-form")),
+  })
+    .then((response) => response.json())
+    .then((html) => {
+      // you can put any JS code here
+    });
+});

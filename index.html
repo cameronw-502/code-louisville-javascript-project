@@ -283,48 +283,69 @@
       </div>
     </div>
 
-    <div class="newsletter">
+    <div class="newsletter container">
       <h1>Sign up to recieve real-time information about COVID-19!</h1>
-
-      <div>
-        <input
-          type="text"
-          id="txtFirstName"
-          placeholder="Enter your first name"
-        />
-      </div>
-      <div>
-        <input
-          type="text"
-          id="txtLastName"
-          placeholder="Enter your last name"
-        />
-      </div>
-      <div>
-        <input
-          type="text"
-          id="txtPhoneNumber"
-          placeholder="Enter your phone number"
-        />
-      </div>
-      <div>
-        <input
-          type="email"
-          id="txtEmailAddress"
-          placeholder="Enter your email address"
-        />
-      </div>
-      <div>
-        <select id="agree">
-          <option value="yes">I agree to terms and conditions.</option>
-          <option value="no">I do not agree to terms and conditions.</option>
-        </select>
-      </div>
-      <div>
-        <input type="button" id="bt" value="Submit" onclick="saveFile()" />
+      <form
+        method="post"
+        id="sheetdb-form"
+        action="https://sheetdb.io/api/v1/258kzr6osm16s"
+      >
+        <div class="newsletter-field">
+          <input
+            type="text"
+            id="txtFirstName"
+            placeholder="Enter your first name"
+            name="data[firstname]"
+          />
+        </div>
+        <div class="newsletter-field">
+          <input
+            type="text"
+            id="txtLastName"
+            placeholder="Enter your last name"
+            name="data[lastname]"
+          />
+        </div>
+        <div class="newsletter-field">
+          <input
+            type="text"
+            id="txtPhoneNumber"
+            placeholder="Enter your phone number"
+            name="data[phonenumber]"
+          />
+        </div>
+        <div class="newsletter-field">
+          <input
+            type="email"
+            required
+            id="txtEmailAddress"
+            placeholder="Enter your email address"
+            name="data[email]"
+          />
+        </div>
+        <div class="newletter-option">
+          <select id="agree" name="data[agree]">
+            <option value="yes">I agree to terms and conditions.</option>
+            <option value="no">I do not agree to terms and conditions.</option>
+          </select>
+        </div>
+        <div class="button">
+          <button
+            type="submit"
+            class="newletter-button"
+            id="bt"
+            value="Submit"
+            onclick="saveFile()"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+      <div class="success">
+        <h2 id="newsletter-success" class="newsletter-success"></h2>
+        <h2 id="newsletter-decline" class="newsletter-decline"></h2>
       </div>
     </div>
-    <!-- This is the main JavaScript file which executes logic for your site -->
     <script src="src/main.js"></script>
   </body>
 </html>
